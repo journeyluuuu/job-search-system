@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Job</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+	<div class="container">
+			<center><h1> Job Search System</h1> </center>
+			<ul class="breadcrumb">
+				<li><a href= "/">Home</a><span class="divider">/</span></li>
+				<li><a href="/search">Search</a> <span class="divider">/</span></li>
+				<li class="active">User Info/</li>
+				<li><a href="/jobinfo">Job Info</a> <span class="divider">/</span></li>
+				<li><a href="/match">Best Match</a> <span class="divider"> </span></li>
+			 
+			</ul>
+
+			<!-- <form> -->
+				<div class="search bar7">
+					<form action="{{ url_for('deleteuserinfo') }}" method="GET">
+						<div class="form-group row">
+							<label for="inputjobtype" class="col-sm-2 col-form-label">UIN</label>
+							<div class="col-sm-10">
+								{% if UIN %}
+								<input type="text" class="form-control" id="inputUIN" placeholder="UIN..." name="UIN" value="{{UIN}}">
+								{% else %}
+								<input type="text" class="form-control" id="inputUIN" placeholder="UIN..." name="UIN">
+								{% endif %}
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary">DELETE</button>
+					</form>
+				</div>
+			<!-- </form> -->
+
+	</div>
+
+</body>
+</html>

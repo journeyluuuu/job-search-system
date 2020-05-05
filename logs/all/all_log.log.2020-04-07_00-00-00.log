@@ -1,0 +1,207 @@
+2020-04-07 22:01:22,528 - ERROR - app:search - lineno:330 - select search books error: (1146, "Table 'jobmatch.books' doesn't exist")
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 327, in search
+    search_books = mysql.fetchall_db(sql)
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'jobmatch.books' doesn't exist")
+2020-04-07 23:14:29,835 - ERROR - app:root - lineno:34 - select hot books error: (1054, "Unknown column 'srudentname' in 'field list'")
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 29, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'srudentname' in 'field list'")
+2020-04-07 23:14:29,835 - ERROR - app:root - lineno:34 - select hot books error: (1054, "Unknown column 'srudentname' in 'field list'")
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 29, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'srudentname' in 'field list'")
+2020-04-07 23:14:29,835 - ERROR - app:root - lineno:34 - select hot books error: (1054, "Unknown column 'srudentname' in 'field list'")
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 29, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'srudentname' in 'field list'")
+2020-04-07 23:14:29,835 - ERROR - app:root - lineno:34 - select hot books error: (1054, "Unknown column 'srudentname' in 'field list'")
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 29, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'srudentname' in 'field list'")
+2020-04-07 23:14:30,896 - ERROR - app:root - lineno:34 - select hot books error: (1054, "Unknown column 'srudentname' in 'field list'")
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 29, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'srudentname' in 'field list'")
+2020-04-07 23:14:53,415 - ERROR - app:root - lineno:34 - select hot books error: (1054, "Unknown column 'srudentname' in 'field list'")
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 29, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'srudentname' in 'field list'")
+2020-04-07 23:14:54,194 - ERROR - app:root - lineno:34 - select hot books error: (1054, "Unknown column 'srudentname' in 'field list'")
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 29, in root
+    hot_books = mysql.fetchall_db(sql)
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'srudentname' in 'field list'")
+2020-04-07 23:16:06,138 - ERROR - app:search - lineno:356 - select search books error: (1146, "Table 'cs411.books' doesn't exist")
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 353, in search
+    search_books = mysql.fetchall_db(sql)
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/utils.py", line 44, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cs411.books' doesn't exist")

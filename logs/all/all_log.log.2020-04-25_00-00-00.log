@@ -1,0 +1,14 @@
+2020-04-25 00:25:56,619 - ERROR - app:root - lineno:35 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 32, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-25 00:28:17,414 - INFO - app:insertuserinfo - lineno:239 - insert user success,sql: insert into Students 
+            values (6, 'Leo', 'male', 'master', 'me', 4.0)
+2020-04-25 00:28:26,427 - INFO - app:updateuserinfo - lineno:282 - update user success,sql: update Students 
+                      set studentName='Leo', Gender='male', Standing='master', Major='me', GPA='3.80' 
+            where UIN = '6' 
+2020-04-25 00:28:30,654 - INFO - app:deleteuserinfo - lineno:310 - delete user success,sql:DELETE  FROM Students where UIN=6 
+2020-04-25 00:51:53,449 - INFO - app:insertuserinfo - lineno:226 - insert user success,sql: insert into Students 
+            values (6, 'Leo', 'male', 'master', 'me', 4.0)
+2020-04-25 00:51:56,666 - INFO - app:deleteuserinfo - lineno:297 - delete user success,sql:DELETE  FROM Students where UIN=6 

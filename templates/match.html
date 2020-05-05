@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Job</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+	<div class="container">
+			<center><h1> Job Search System</h1> </center>
+			<ul class="breadcrumb">
+			  <li><a href= "/">Home</a><span class="divider">/</span></li>
+			  <li><a href="/search">Search</a> <span class="divider">/</span></li>
+			  <li><a href="/userinfo">User Info</a> <span class="divider">/</span></li>
+			  <li><a href="/jobinfo">Job Info</a> <span class="divider">/</span></li>
+			  <li class="active">Best Match</li>
+			 
+			</ul>
+
+			<form>
+				<div class="search bar7">
+					<form action="/search" method="GET">
+						<p>
+						<div class="form-group row">
+							<label for="UIN" class="col-sm-2 col-form-label">Your UIN</label>
+							<div class="col-sm-10">
+								{% if searchUIN %}
+								<input type="text" class="form-control" id="UIN" placeholder="UIN..." name="searchUIN" value="{{searchUIN}}">
+								{% else %}
+								<input type="text" class="form-control" id="UIN" placeholder="UIN..." name="searchUIN">
+								{% endif %}
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="rate" class="col-sm-2 col-form-label">Match Rate</label>
+							<div class="col-sm-10">
+								{% if searchrate %}
+								<input type="text" class="form-control" id="rate" placeholder="rate..." name="searchrate" value="{{searchrate}}">
+								{% else %}
+								<input type="text" class="form-control" id="rate" placeholder="rate..." name="searchrate">
+								{% endif %}
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary">Search</button>
+					</p>
+					</form>
+				</div>
+			</form>
+
+
+			<div class="row"> 
+				{% if not init %}
+					<center><h2>Suitable Jobs</h2></center>
+					{% if not keysearch %}
+						<p><br><br><br>No suitable job.</p>
+					{% else %}
+
+				<table class="table table-bordered">
+					<thead>
+					<th>Company Name</th>
+					<th>Job Name</th>
+					<th>Loaction</th>
+					<th>Type</th>
+					<th>Field</th>
+					<th>Title</th>
+					</thead>
+					<tbody>			
+						{% for key in keysearch %}
+							<tr>
+								<td>{{ key[0]}}</td>
+								<td>{{ key[1]}}</td>
+								<td>{{ key[2]}}</td>
+								<td>{{ key[3]}}</td>
+								<td>{{ key[4]}}</td>
+								<td>{{ key[5]}}</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+				{% endif %}
+				{% endif %}
+
+			</div>
+
+	</div>
+
+</body>
+</html>

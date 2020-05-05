@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Job</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+	<div class="container">
+			<center><h1> Job Search System</h1> </center>
+			<ul class="breadcrumb">
+			  <li><a href= "/">Home</a><span class="divider">/</span></li>
+			  <li><a href="/search">Search</a> <span class="divider">/</span></li>
+			  <li class="active">User Info/</li>
+			  <li><a href="/jobinfo">Job Info</a> <span class="divider">/</span></li>
+			  <li><a href="/match">Best Match</a> <span class="divider"> </span></li>
+			 
+			</ul>
+
+
+			<a class="btn btn-primary" href="/insert">Insert</a>
+			<a class="btn btn-primary" href="/delete">Delete</a>
+			<a class="btn btn-primary" href="/update">Update</a>
+
+			<form>
+				<div class="search bar8">
+					<form action="/showuserinfo" method="GET">
+
+					</form>
+				</div>
+			</form>
+
+			<br>
+		
+			<center><h2>User Infomation</h2></center>
+
+			<div class="row"> 
+				{% if not keysearch %}
+					<p><br>The result is empty.</p> 
+				{% else %}
+				<table class="table table-bordered">
+					<thead>
+					<th>UIN</th>
+					<th>Student Name</th>
+					<th>Gender</th>
+					<th>Standing</th>
+					<th>Major</th>
+					<th>GPA</th>
+					</thead>
+					<tbody>			
+						{% for key in keysearch %}
+							<tr>
+								<td>{{ key[0]}}</td>
+								<td>{{ key[1]}}</td>
+								<td>{{ key[2]}}</td>
+								<td>{{ key[3]}}</td>
+								<td>{{ key[4]}}</td>
+								<td>{{ key[5]}}</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+				{% endif %}
+
+			</div>
+	</div>
+
+	
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Job</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+	<div class="container">
+			<center><h1> Job Search System</h1> </center>
+			<ul class="breadcrumb">
+			  <li><a href= "/">Home</a><span class="divider">/</span></li>
+			  <li class="active">Search/</li>
+			  <li><a href="/userinfo">User Info</a> <span class="divider">/</span></li>
+			  <li><a href="/jobinfo">Job Info</a> <span class="divider">/</span></li>
+			  <li><a href="/match">Best Match</a> <span class="divider"> </span></li>
+			 
+			</ul>
+
+			<form>
+				<div class="search bar7">
+					<form action="/search" method="GET">
+						<p>
+						<div class="form-group row">
+							<label for="inputjobtype" class="col-sm-2 col-form-label">Job Type</label>
+							<div class="col-sm-10">
+								{% if searchtype %}
+								<input type="text" class="form-control" id="inputjobtype" placeholder="Type..." name="searchtype" value="{{searchtype}}">
+								{% else %}
+								<input type="text" class="form-control" id="inputjobtype" placeholder="Type..." name="searchtype">
+								{% endif %}
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputjobfield" class="col-sm-2 col-form-label">Job Field</label>
+							<div class="col-sm-10">
+								{% if searchfield %}
+								<input type="text" class="form-control" id="inputjobfield" placeholder="Field..." name="searchfield" value="{{searchfield}}">
+								{% else %}
+								<input type="text" class="form-control" id="inputjobfield" placeholder="Field..." name="searchfield">
+								{% endif %}
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputjobloc" class="col-sm-2 col-form-label">Job Location</label>
+							<div class="col-sm-10">
+								{% if searchlocation %}
+								<input type="text" class="form-control" id="inputjobtloc" placeholder="Location..." name="searchlocation" value="{{searchlocation}}">
+								{% else %}
+								<input type="text" class="form-control" id="inputjobtloc" placeholder="Location..." name="searchlocation">
+								{% endif %}
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputjobname" class="col-sm-2 col-form-label">Job Name</label>
+							<div class="col-sm-10">
+								{% if searchjobname %}
+								<input type="text" class="form-control" id="inputjobname" placeholder="Job Name..." name="searchjobname" value="{{searchjobname}}">
+								{% else %}
+								<input type="text" class="form-control" id="inputjobname" placeholder="Job Name..." name="searchjobname">
+								{% endif %}
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary">Search</button>
+					</p>
+					</form>
+				</div>
+			</form>
+
+
+			<div class="row"> 
+				{% if not init %}
+					<center><h2>Search Results</h2></center>
+					{% if not keysearch %}
+						<p><br><br><br>The result is empty.</p>
+					{% else %}
+
+				<table class="table table-bordered">
+					<thead>
+					<th>Company Name</th>
+					<th>Job Name</th>
+					<th>Loaction</th>
+					<th>Type</th>
+					<th>Field</th>
+					<th>Title</th>
+					</thead>
+					<tbody>			
+						{% for key in keysearch %}
+							<tr>
+								<td>{{ key[0]}}</td>
+								<td>{{ key[1]}}</td>
+								<td>{{ key[2]}}</td>
+								<td>{{ key[3]}}</td>
+								<td>{{ key[4]}}</td>
+								<td>{{ key[5]}}</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+				{% endif %}
+				{% endif %}
+
+			</div>
+
+	</div>
+
+</body>
+</html>

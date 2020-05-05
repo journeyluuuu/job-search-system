@@ -1,0 +1,459 @@
+2020-05-04 07:39:10,579 - INFO - app:insertuserinfo - lineno:143 - insert user success,sql: insert into Students
+            values (6, 'Leo', 'male', 'master', 'me', 4.0)
+2020-05-04 07:40:18,994 - INFO - app:insertuserinfo - lineno:142 - insert user success,sql: insert into Students
+            values (7, 'Zora', 'female', 'freshman', 'ce', 3.80)
+2020-05-04 07:40:22,690 - INFO - app:deleteuserinfo - lineno:263 - delete user success,sql:DELETE  FROM Students where UIN=6 
+2020-05-04 07:40:25,429 - INFO - app:deleteuserinfo - lineno:263 - delete user success,sql:DELETE  FROM Students where UIN=7 
+2020-05-04 08:32:44,611 - ERROR - app:render_match - lineno:227 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 222, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+2020-05-04 08:32:44,611 - ERROR - app:render_match - lineno:227 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 222, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+2020-05-04 08:32:45,406 - ERROR - app:render_match - lineno:227 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 222, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+2020-05-04 08:32:45,406 - ERROR - app:render_match - lineno:227 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 222, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+2020-05-04 08:32:50,289 - ERROR - app:render_match - lineno:227 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 221, in render_match
+    sql= """call student_match_count ({})""".format(keyUIN)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 08:32:50,289 - ERROR - app:render_match - lineno:227 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 221, in render_match
+    sql= """call student_match_count ({})""".format(keyUIN)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 17:26:13,499 - ERROR - app:render_match - lineno:227 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 222, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+2020-05-04 17:26:13,499 - ERROR - app:render_match - lineno:227 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 222, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+2020-05-04 17:28:28,818 - ERROR - app:render_match - lineno:227 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 222, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+2020-05-04 17:28:28,818 - ERROR - app:render_match - lineno:227 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 222, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+2020-05-04 17:29:07,875 - ERROR - app:render_match - lineno:227 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 222, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+2020-05-04 17:29:07,875 - ERROR - app:render_match - lineno:227 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 222, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+2020-05-04 17:29:23,650 - ERROR - app:render_match - lineno:227 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 222, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+2020-05-04 17:29:23,650 - ERROR - app:render_match - lineno:227 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 222, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.student_match_count; expected 1, got 0')
+2020-05-04 17:29:30,102 - ERROR - app:render_match - lineno:227 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 221, in render_match
+    sql= """call student_match_count ({})""".format(keyUIN)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 17:29:30,102 - ERROR - app:render_match - lineno:227 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 221, in render_match
+    sql= """call student_match_count ({})""".format(keyUIN)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 17:30:29,083 - ERROR - app:render_match - lineno:227 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 221, in render_match
+    sql= """call student_match_count ({})""".format(keyUIN)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 17:30:29,083 - ERROR - app:render_match - lineno:227 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 221, in render_match
+    sql= """call student_match_count ({})""".format(keyUIN)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 17:31:34,038 - ERROR - app:render_match - lineno:227 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 221, in render_match
+    sql= """call student_match_count ({})""".format(keyUIN)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 17:31:34,038 - ERROR - app:render_match - lineno:227 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 221, in render_match
+    sql= """call student_match_count ({})""".format(keyUIN)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 17:31:49,939 - ERROR - app:render_match - lineno:227 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 221, in render_match
+    sql= """call student_match_count ({})""".format(keyUIN)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 17:31:49,939 - ERROR - app:render_match - lineno:227 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 221, in render_match
+    sql= """call student_match_count ({})""".format(keyUIN)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 21:06:37,098 - ERROR - app:render_match - lineno:227 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 221, in render_match
+    sql= """call student_match_count ({})""".format(keyUIN)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 21:06:37,098 - ERROR - app:render_match - lineno:227 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 221, in render_match
+    sql= """call student_match_count ({})""".format(keyUIN)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 21:21:36,804 - ERROR - app:render_match - lineno:230 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 224, in render_match
+    sql= """call best_match ({},{})""".format(keyUIN,keyrate)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 21:21:42,466 - ERROR - app:render_match - lineno:230 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 224, in render_match
+    sql= """call best_match ({},{})""".format(keyUIN,keyrate)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 21:33:52,904 - ERROR - app:render_match - lineno:230 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 224, in render_match
+    sql= """call best_match ({},{})""".format(keyUIN,keyrate)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 21:33:59,541 - ERROR - app:render_match - lineno:230 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 224, in render_match
+    sql= """call best_match ({},{})""".format(keyUIN,keyrate)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 21:53:18,356 - ERROR - app:render_match - lineno:230 - match jobs error: local variable 'keyUIN' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 224, in render_match
+    sql= """call best_match ({},{})""".format(keyUIN,keyrate)
+UnboundLocalError: local variable 'keyUIN' referenced before assignment
+2020-05-04 22:30:16,554 - ERROR - app:render_match - lineno:230 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.best_match; expected 1, got 2')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 225, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.best_match; expected 1, got 2')
+2020-05-04 22:38:14,852 - ERROR - app:render_match - lineno:230 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.best_match; expected 1, got 2')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 225, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.best_match; expected 1, got 2')
+2020-05-04 22:44:30,090 - ERROR - app:render_match - lineno:230 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.best_match; expected 1, got 2')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 225, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.best_match; expected 1, got 2')
+2020-05-04 22:44:31,281 - ERROR - app:render_match - lineno:230 - match jobs error: (1318, 'Incorrect number of arguments for PROCEDURE cs411.best_match; expected 1, got 2')
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 225, in render_match
+    keysearch = mysql.fetchall_db(sql) # fetch data from database
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 41, in fetchall_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1318, 'Incorrect number of arguments for PROCEDURE cs411.best_match; expected 1, got 2')

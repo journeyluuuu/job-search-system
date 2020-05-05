@@ -1,0 +1,793 @@
+2020-04-09 00:48:38,442 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:00:31,572 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:00:31,656 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:00:31,802 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:00:32,584 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:00:32,923 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:00:33,049 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:00:33,185 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:00:33,314 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:00:33,436 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:00:41,504 - ERROR - app:searchField - lineno:146 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 138, in searchField
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:00:45,506 - ERROR - app:search - lineno:518 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 512, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:14:11,817 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:14:34,670 - ERROR - app:is_valid - lineno:375 - username:journeyluuuu,password:12345678: has login error
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 366, in is_valid
+    result = mysql.fetchone_db(sql)
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/utils.py", line 33, in fetchone_db
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'cs411.user' doesn't exist")
+2020-04-09 01:19:27,680 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:19:28,455 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:19:28,724 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:19:28,859 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:55,575 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:55,721 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:55,901 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:56,021 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:56,161 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:56,287 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:56,419 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:56,544 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:56,670 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:56,805 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:56,941 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:57,090 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:57,237 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:20:57,361 - ERROR - app:search - lineno:519 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 513, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:27:29,809 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:27:35,079 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:27:37,804 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:28:09,192 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:28:20,290 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:31:53,849 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:32:22,491 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:32:43,609 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:35:04,465 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:35:05,020 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:35:05,170 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:35:05,291 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:50:27,730 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:50:33,614 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:50:34,412 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:52:45,995 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:56:21,981 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:56:24,454 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:57:00,201 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:57:00,997 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:57:15,086 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:57:16,495 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:57:17,698 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 01:57:18,715 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 01:57:35,314 - ERROR - app:search - lineno:520 - select search books error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 514, in search
+    keyword = keyword.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 17:38:27,922 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:38:30,291 - ERROR - app:search - lineno:246 - select jobs error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 232, in search
+    searchtype = searchtype.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 17:39:05,150 - ERROR - app:search - lineno:246 - select jobs error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 232, in search
+    searchtype = searchtype.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 17:39:05,895 - ERROR - app:search - lineno:246 - select jobs error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 232, in search
+    searchtype = searchtype.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 17:39:07,051 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:39:08,929 - ERROR - app:search - lineno:246 - select jobs error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 232, in search
+    searchtype = searchtype.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 17:39:32,885 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:39:33,253 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:39:34,484 - ERROR - app:search - lineno:246 - select jobs error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 232, in search
+    searchtype = searchtype.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 17:39:57,872 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:40:02,943 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:41:47,105 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:42:15,035 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:43:59,308 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:43:59,996 - ERROR - app:search - lineno:246 - select jobs error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 232, in search
+    searchtype = searchtype.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 17:44:01,657 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:44:03,357 - ERROR - app:search - lineno:246 - select jobs error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 232, in search
+    searchtype = searchtype.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 17:44:19,657 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:44:20,081 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:44:20,757 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:44:21,287 - ERROR - app:search - lineno:246 - select jobs error: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 232, in search
+    searchtype = searchtype.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-04-09 17:46:18,162 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:48:10,329 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:48:11,187 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:48:12,447 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:48:27,463 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:48:28,298 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:48:29,424 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:48:31,049 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:48:31,978 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:48:47,955 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:48:48,890 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:50:39,767 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:50:40,398 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:50:41,116 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:51:26,208 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:51:26,780 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:51:29,118 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:51:29,658 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:51:30,183 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:51:31,913 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:51:57,299 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:51:58,025 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:51:58,804 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:52:01,561 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:52:02,702 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:54:45,589 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:54:46,457 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:54:59,008 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:55:01,176 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:55:03,089 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:55:15,247 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:55:17,742 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:57:21,533 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:57:21,533 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:57:21,533 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:57:47,631 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 17:58:47,278 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:08:13,124 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:10:08,826 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:11:08,114 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:13:30,790 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:16:17,555 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:19:39,309 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:31:38,408 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:31:40,838 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:32:59,477 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:33:55,674 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:34:58,341 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:46:52,004 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:50:21,065 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 18:58:08,735 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 19:02:27,528 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 19:03:58,248 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 19:07:46,598 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 19:07:53,997 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 19:08:10,888 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 19:08:16,080 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 19:08:25,934 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 19:09:10,499 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 19:09:20,018 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 19:12:27,489 - ERROR - app:search - lineno:593 - select jobs error: tuple index out of range
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 587, in search
+    and jobName like '%{}%' limit 20""".format(*[key_dict.values])
+IndexError: tuple index out of range
+2020-04-09 19:12:28,696 - ERROR - app:search - lineno:593 - select jobs error: tuple index out of range
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 587, in search
+    and jobName like '%{}%' limit 20""".format(*[key_dict.values])
+IndexError: tuple index out of range
+2020-04-09 19:12:55,888 - ERROR - app:search - lineno:593 - select jobs error: tuple index out of range
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 587, in search
+    and jobName like '%{}%' limit 20""".format(*[key_dict.values])
+IndexError: tuple index out of range
+2020-04-09 19:13:15,128 - ERROR - app:search - lineno:593 - select jobs error: tuple index out of range
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 587, in search
+    and jobName like '%{}%' limit 20""".format(*[key_dict.values])
+IndexError: tuple index out of range
+2020-04-09 19:15:28,342 - ERROR - app:search - lineno:593 - select jobs error: tuple index out of range
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 587, in search
+    and jobName like '%{}%' limit 20""".format(*[key_dict.values()])
+IndexError: tuple index out of range
+2020-04-09 19:15:29,191 - ERROR - app:search - lineno:593 - select jobs error: tuple index out of range
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 587, in search
+    and jobName like '%{}%' limit 20""".format(*[key_dict.values()])
+IndexError: tuple index out of range
+2020-04-09 19:15:56,269 - ERROR - app:search - lineno:594 - select jobs error: tuple index out of range
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 588, in search
+    and jobName like '%{}%' limit 20""".format(*[key_dict.values()])
+IndexError: tuple index out of range
+2020-04-09 19:20:11,207 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 19:22:01,716 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 19:22:04,731 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 23:05:36,314 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 23:05:41,700 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 23:17:43,887 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 23:19:10,467 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 23:19:12,432 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 23:19:22,141 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
+2020-04-09 23:26:45,666 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'

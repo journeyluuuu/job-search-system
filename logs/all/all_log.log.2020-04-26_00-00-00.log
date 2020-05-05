@@ -1,0 +1,209 @@
+2020-04-26 01:16:25,521 - ERROR - app:log_exception - lineno:1891 - Exception on /delete [GET]
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 243, in render_delete
+    key=keyword,
+NameError: name 'keyword' is not defined
+2020-04-26 01:16:32,674 - ERROR - app:log_exception - lineno:1891 - Exception on /update [GET]
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 256, in render_update
+    key=keyword,
+NameError: name 'keyword' is not defined
+2020-04-26 01:16:34,243 - ERROR - app:log_exception - lineno:1891 - Exception on /insert [GET]
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 229, in render_insert
+    key=keyword,
+NameError: name 'keyword' is not defined
+2020-04-26 01:16:43,437 - ERROR - app:log_exception - lineno:1891 - Exception on /update [GET]
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 256, in render_update
+    key=keyword,
+NameError: name 'keyword' is not defined
+2020-04-26 01:17:30,463 - ERROR - app:log_exception - lineno:1891 - Exception on /insert [GET]
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 229, in render_insert
+    key=keyword,
+NameError: name 'keyword' is not defined
+2020-04-26 01:19:21,379 - ERROR - app:log_exception - lineno:1891 - Exception on /delete [GET]
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 243, in render_delete
+    #    key=keyword,
+NameError: name 'keyword' is not defined
+2020-04-26 01:20:16,020 - ERROR - app:log_exception - lineno:1891 - Exception on /update [GET]
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 256, in render_update
+NameError: name 'keyword' is not defined
+2020-04-26 01:22:21,542 - ERROR - app:log_exception - lineno:1891 - Exception on /update [GET]
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 256, in render_update
+NameError: name 'keyword' is not defined
+2020-04-26 01:42:13,246 - ERROR - app:deleteuserinfo - lineno:214 - delete user error: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 207, in deleteuserinfo
+    mysql.exe(sql)
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 50, in exe
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+2020-04-26 01:42:19,940 - ERROR - app:deleteuserinfo - lineno:214 - delete user error: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 207, in deleteuserinfo
+    mysql.exe(sql)
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 50, in exe
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+2020-04-26 01:42:25,872 - ERROR - app:deleteuserinfo - lineno:214 - delete user error: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/app.py", line 207, in deleteuserinfo
+    mysql.exe(sql)
+  File "/Users/chenglu/Desktop/cs411/project1/cs411/utils.py", line 50, in exe
+    c.execute(sql)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+2020-04-26 01:43:25,417 - INFO - app:insertuserinfo - lineno:137 - insert user success,sql: insert into Students
+            values (6, 'Leo', 'male', 'master', 'me', 4.0)
+2020-04-26 01:43:35,767 - INFO - app:updateuserinfo - lineno:180 - update user success,sql: update Students
+                      set studentName='Leo', Gender='male', Standing='master', Major='me', GPA='4.0'
+            where UIN = '6' 
+2020-04-26 01:43:39,037 - INFO - app:deleteuserinfo - lineno:208 - delete user success,sql:DELETE  FROM Students where UIN=6 

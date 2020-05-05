@@ -1,0 +1,18 @@
+2020-05-01 02:10:50,926 - INFO - app:insertuserinfo - lineno:138 - insert user success,sql: insert into Students
+            values (6, 'Leo', 'male', 'master', 'me', 4.0)
+2020-05-01 02:11:00,911 - INFO - app:updateuserinfo - lineno:181 - update user success,sql: update Students
+                      set studentName='Leo', Gender='male', Standing='master', Major='me', GPA='3.80'
+            where UIN = '6' 
+2020-05-01 02:11:05,515 - INFO - app:deleteuserinfo - lineno:209 - delete user success,sql:DELETE  FROM Students where UIN=6 
+2020-05-01 02:12:01,028 - INFO - app:insertuserinfo - lineno:138 - insert user success,sql: insert into Students
+            values (6, 'Leo', 'male', 'master', 'me', 4.0)
+2020-05-01 02:12:09,201 - INFO - app:updateuserinfo - lineno:181 - update user success,sql: update Students
+                      set studentName='Leo', Gender='male', Standing='master', Major='me', GPA='3.80'
+            where UIN = '6' 
+2020-05-01 02:12:13,314 - INFO - app:deleteuserinfo - lineno:209 - delete user success,sql:DELETE  FROM Students where UIN=6 
+2020-05-01 02:14:31,242 - INFO - app:insertuserinfo - lineno:138 - insert user success,sql: insert into Students
+            values (6, 'Leo', 'male', 'master', 'me', 4.0)
+2020-05-01 02:14:41,993 - INFO - app:updateuserinfo - lineno:181 - update user success,sql: update Students
+                      set studentName='Leo', Gender='male', Standing='master', Major='me', GPA='3.80'
+            where UIN = '6' 
+2020-05-01 02:14:45,906 - INFO - app:deleteuserinfo - lineno:209 - delete user success,sql:DELETE  FROM Students where UIN=6 

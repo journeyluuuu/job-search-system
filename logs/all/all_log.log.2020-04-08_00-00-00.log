@@ -1,0 +1,5 @@
+2020-04-09 00:48:38,442 - ERROR - app:root - lineno:34 - select hot books error: 'studentName'
+Traceback (most recent call last):
+  File "/Users/chenglu/Desktop/cs411/project1/module/Flask-BookRecommend-Mysql-master/web/app.py", line 31, in root
+    my_name = hot_books[0]['studentName']
+KeyError: 'studentName'
